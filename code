@@ -1,0 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int* p1, * p2, * p, a, b;//定义接下来要用到的变量类型
+	printf("请输入两个整数：");
+	scanf("%d,%d", &a, &b);
+	p1 = &a;
+	p2 = &b;//使a，b分别指向变量p1，p2
+	if (a < b);
+		{ p = p1; p1 = p2; p2 = p; };//这样p1指向大的数，p2指向较小的数
+	printf("a=%d,b=%d\n", a, b);
+	printf("max = %d,min = %d\n", *p1, *p2);
+	return 0;
